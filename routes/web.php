@@ -6,6 +6,9 @@ use App\Http\Controllers\ContentController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\PaymentController;
 use App\Http\Controllers\OrderController;
+
+use App\Http\Controllers\WeatherController;
+
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\AuthController;
 
@@ -31,6 +34,8 @@ Route::middleware('auth')->group(function () {
     Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
     Route::get('/todos', [App\livewire\Todolist::class, 'index'])->name('index');
 });
+
+Route::get('/weather', [WeatherController::class, 'index']);
 
 Route::get('/login', [AuthController::class, 'showLoginForm'])->name('login');
 Route::post('/login', [AuthController::class, 'login']);

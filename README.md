@@ -76,3 +76,10 @@ CMS REF: https://peerdh.com/blogs/programming-insights/building-a-custom-content
 ECOMMERCE REFS:
     https://github.com/binafy/laravel-cart/tree/1.x?tab=readme-ov-file#installation
     https://medium.com/@jsanwo64/implementing-laravel-cart-a-lightweight-cart-package-for-laravel-cf41d8750a80
+
+WEATHER APP REFS: 
+    https://openweathermap.org/api
+
+    https://qodespark.medium.com/laravel-artisan-commands-for-generating-service-and-repository-classes-64596b890e3a
+
+    https://dev.to/mdarifulhaque/step-by-step-guide-to-integrating-third-party-apis-in-laravel-applications-1a7c

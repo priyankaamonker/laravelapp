@@ -10,6 +10,7 @@
     <div id="body" class="bg-slate-50 h-screen flex">
     <nav class="bg-white w-80 h-screen flex flex-col gap-10 border-r border-slate-100">
         <div class="logo text-2xl font-bold text-center h-16 flex items-center justify-center">My Laravel App</div>
+        @auth
         <ul class="px-6 space-y-2">
             <li>
                 <a class="block px-4 py-2.5 text-slate-800 font-semibold hover:bg-emerald-950 hover:text-white rounded-lg" href="{{ url('/') }}">Home</a>
@@ -41,12 +42,16 @@
                 <a class="block px-4 py-2.5 text-slate-800 font-semibold hover:bg-emerald-950 hover:text-white rounded-lg" href="{{ url('/orders') }}">Orders</a>
             </li>
             <li>
+                <a class="block px-4 py-2.5 text-slate-800 font-semibold hover:bg-emerald-950 hover:text-white rounded-lg" href="{{ url('/weather') }}">Weather App</a>
+            </li>
+            <li>
                 <form method="POST" action="{{ route('logout') }}">
                 @csrf
                 <button class="block px-4 py-2.5 text-slate-800 font-semibold hover:bg-emerald-950 hover:text-white rounded-lg" type="submit">Logout</button>
                 </form>
             </li>
         </ul>
+        @endauth
     </nav>
     <div class="right w-full flex gap-2 flex-col">
         <div class="p-4">          
